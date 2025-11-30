@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10,6))
+plt.plot(actual_rescaled, label='Actual Price')
+plt.plot(predicted_rescaled, label='Predicted Price')
+plt.title('Petrol Price Forecasting')
+plt.xlabel('Time')
+plt.ylabel('Price')
+plt.legend()
+plt.show()
+
+
+
+
+import matplotlib.pyplot as plt
+
+#visualize the results
+plt.figure(figsize=(10,6))
+plt.plot(scaler.inverse_transform(df3))
+plt.plot(actual_rescaled, label='Actual Price')
+plt.plot(predicted_rescaled, label='Predicted Price')
+plt.title('Petrol Price Forecasting')
+plt.xlabel('Time')
+plt.ylabel('Price')
+plt.legend()
+plt.show()
